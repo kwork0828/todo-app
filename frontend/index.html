@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibe Todo | 프리미엄 투두</title>
+  
+  <!-- 폰트: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- 아이콘: FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- 스타일시트 연결 -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 백그라운드 애니메이션 오라 (Aura) 요소 -->
+  <div class="background-shape shape-1"></div>
+  <div class="background-shape shape-2"></div>
+  <div class="background-shape shape-3"></div>
+
+  <!-- 메인 글래스 카드 래퍼 -->
+  <main class="todo-glass-card">
+    <header>
+      <h1>나만의 할 일 ✨</h1>
+      <p class="subtitle">오늘도 빛나는 하루를 만들어봐요!</p>
+    </header>
+
+    <!-- 입력 섹션 -->
+    <section class="input-section">
+      <div class="input-wrapper">
+        <input 
+          type="text" 
+          id="todoInput" 
+          placeholder="무엇을 해야 하나요?" 
+          autocomplete="off"
+        />
+        <button id="addBtn" aria-label="할 일 추가">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- 에러/로딩 메시지 표시 공간 -->
+    <div id="statusMessage" class="status-msg"></div>
+
+    <!-- 리스트 섹션 -->
+    <section class="list-section">
+      <ul id="todoList" class="todo-list">
+        <!-- 자바스크립트에 의해 데이터가 여기에 삽입됩니다 -->
+      </ul>
+    </section>
+  </main>
+
+  <!-- 자바스크립트 연결 -->
+  <script src="script.js"></script>
+</body>
+</html>
