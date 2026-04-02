@@ -1,5 +1,5 @@
-// 실제 Render 배포된 백엔드 API 주소
-const API_URL = 'https://todo-app-qfco.onrender.com/api/todos';
+// Vercel 라우팅 설정에 따라 상대 경로 사용 (어느 도메인에서나 작동 가능)
+const API_URL = '/api/todos';
 
 // DOM 요소 선택
 const todoInput = document.getElementById('todoInput');
