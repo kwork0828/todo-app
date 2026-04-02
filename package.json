@@ -2,11 +2,10 @@
   "name": "todo-app-backend",
   "version": "1.0.0",
   "description": "Todo App Node.js Backend",
-  "main": "dist/index.js",
   "scripts": {
     "start": "node dist/index.js",
     "dev": "nodemon api/index.ts",
-    "build": "tsc"
+    "build:local": "tsc"
   },
   "keywords": [],
   "author": "",
